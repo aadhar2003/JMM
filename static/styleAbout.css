@@ -675,6 +675,7 @@ input[type="email"] {
 }
 
 @media (max-width: 600px) {
+  
   /* .main-con{
     display: flex;
     justify-content: center;
@@ -694,8 +695,8 @@ input[type="email"] {
   } */
   .con-para1 {
     display: flex;
-    justify-content: center;
-    /* margin-left: 17px; */
+    /* justify-content: center; */
+    margin-left: 17px;
     /* margin-top: 10px; */
     margin-right: 10px;
     margin-bottom: 64px;
