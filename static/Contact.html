@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Jagriti Malhotra</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="styleContact.css" />
+  </head>
+  <body>
+    <div class="con">
+      <!-- SECTION ONE -->
+      <!-- SECTION ONE -->
+    <div class="section-one">
+      <div class="nav">
+        <div class="header">
+          <div class="hov">
+            <a href="index.html">
+              <span class="jm">J</span><span class="aa">AGRITI</span> <br />
+              <span class="jm la">M</span><span class="aa">ALHOTRA</span>
+            </a>
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="./work.html">WORK</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li class="exp"><a href="./index.html#work">EXPERIENCE</a></li>
+            <li><a style="text-decoration: none;" href="./Contact.html" id="Contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon teen"></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="mobile-nav-icon cross" style="margin-left: -104px; position: absolute;;"
+          ></ion-icon>
+        </div>
+      </div>
+    </div>
+    <!-- /Nvabar -->
+    <div class="contact-header">
+      <p id="ch-text">CONTACT</p>
+    </div>
+    <div class="contact">
+      <iframe
+      id="c-input"
+        data-tally-src="https://tally.so/embed/n0d9bB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="50%"
+        height="292"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title=""
+      ></iframe>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer-first">
+        <div class="name">
+          <a class="fh" href="">J</a><a class="fh rem" href="">AGRITI</a>
+          <br />
+          <a class="fh lap" href="">M</a><a class="fh rem" href="">ALHOTRA</a>
+        </div>
+        <div class="f-links">
+          <a href="./work.html" class="f-link">WORK</a>
+
+          <a href="./about.html" class="f-link">ABOUT</a>
+
+          <a href="" class="f-link">EXPERIENCE</a>
+
+          <a href="./Contact.html" class="f-link" target="_blank">CONTACT</a>
+        </div>
+        <div class="news-letter">
+          <p id="nl-header">SUBSCRIBE TO MY NEWSLETTER</p>
+
+          <p id="nl-subtext">
+            Join my newsletter for top marketing plans, Ai tools and more
+          </p>
+          <div class="data">
+            <input type="email" placeholder="Email" />
+            <div class="btn">
+              <button class="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="footer-second">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/jagritimalhotra/" target="_blank"
+            >LinkedIn</a
+          >
+          <svg width="14" height="13" viewBox="0 0 14 13" fill="none">
+            <path
+              d="M1.43003 13L0.0300293 11.6L9.63003 2H1.03003V0H13.03V12H11.03V3.4L1.43003 13Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div class="socials">
+          <a href="mailto:jagriti24malhotra@gmail.com">Email</a>
+          <svg width="14" height="13" viewBox="0 0 14 13" fill="none">
+            <path
+              d="M1.43003 13L0.0300293 11.6L9.63003 2H1.03003V0H13.03V12H11.03V3.4L1.43003 13Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/mirchimarketing/?hl=en"
+            target="_blank"
+            >Instagram</a
+          >
+          <svg width="14" height="13" viewBox="0 0 14 13" fill="none">
+            <path
+              d="M1.43003 13L0.0300293 11.6L9.63003 2H1.03003V0H13.03V12H11.03V3.4L1.43003 13Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div class="social-img">
+          <a
+            href="https://www.linkedin.com/in/jagritimalhotra/"
+            target="_blank"
+          >
+            <img src="./images/Vector.png" alt=""
+          /></a>
+        </div>
+        <div class="social-img">
+          <a href="mailto:jagriti24malhotra@gmail.com">
+            <img src="./images/Vector (1).png" alt="" />
+          </a>
+        </div>
+        <div class="social-img">
+          <a
+            href="https://www.instagram.com/mirchimarketing/?hl=en"
+            target="_blank"
+            ><img src="./images/Vector (2).png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d
+                .querySelectorAll("iframe[data-tally-src]:not([src])")
+                .forEach(function (e) {
+                  e.src = e.dataset.tallySrc;
+                });
+        };
+      if ("undefined" != typeof Tally) v();
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script");
+        (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+      }
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="scriptContact.js"></script>
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+  </body>
+</html>

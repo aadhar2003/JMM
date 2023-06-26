@@ -1,0 +1,723 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+html {
+  margin: auto;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: auto;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+/* nav bar starts */
+
+.navRight {
+  position: relative;
+}
+.workNavSpecial {
+  display: none;
+  position: absolute;
+}
+
+.header span,
+ul li a {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  flex: 1;
+  margin-right: auto;
+  font-size: 2.4rem;
+  line-height: 99.7%;
+}
+.jm {
+  color: #8c2f39;
+}
+.aa {
+  color: #8c2f3999;
+}
+.la {
+  padding-left: 0.5rem;
+}
+.hov:hover .aa {
+  color: #8c2f39;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-top: 2.4rem;
+  padding-bottom: 0;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.workNav {
+  color: #8c2f39;
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+.workNav:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0.1rem 0 #8c2f39, -0.1rem 0 #8c2f39, 0 0.1rem #8c2f39,
+    0 -0.1rem #8c2f39, 0.1rem 0.1rem #8c2f39, -0.1rem -0.1rem #8c2f39,
+    0.1rem -0.1rem #8c2f39, -0.1rem 0.1rem #8c2f39;
+}
+.work {
+  color: white;
+  text-shadow: 0.1rem 0 #8c2f39, -0.1rem 0 #8c2f39, 0 0.1rem #8c2f39,
+    0 -0.1rem #8c2f39, 0.1rem 0.1rem #8c2f39, -0.1rem -0.1rem #8c2f39,
+    0.1rem -0.1rem #8c2f39, -0.1rem 0.1rem #8c2f39;
+
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+/* nav bar ends */
+
+/* work list starts */
+
+.headingWork {
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+  font-family: Anton;
+  font-style: normal;
+  font-size: 8rem;
+  padding-left: 4.5rem;
+  overflow: hidden;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.05rem solid black;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.hover-reveal {
+  position: absolute;
+  width: 25rem;
+  height: 35rem;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+}
+
+.hover-reveal img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  position: relative;
+  transition: text-transform 0.5s ease-out;
+  overflow: hidden;
+}
+
+.commWorkDiv {
+  padding-top: 4rem;
+  padding-left: 7rem;
+  padding-right: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.commWorkDivDown {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
+}
+
+.commWorkDiv {
+  padding-top: 4rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.commWorkHeading1 {
+  box-sizing: border-box;
+  height: 4.8rem;
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.commWorkHeading2 {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 4.8rem;
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: rgb(0, 0, 0) 0.1rem 0, rgb(0, 0, 0) -0.1rem 0,
+    rgb(0, 0, 0) 0rem 0.1rem, rgb(0, 0, 0) 0rem -0.1rem,
+    rgb(0, 0, 0) 0.1rem 0.1rem, rgb(0, 0, 0) -0.1rem -0.1rem,
+    rgb(0, 0, 0) 0.1rem -0.1rem, rgb(0, 0, 0) -0.1rem 0.1rem;
+}
+
+/* work list ends */
+
+.commWork {
+  background: linear-gradient(
+    90deg,
+    rgba(178, 58, 72, 0.49) 0.73%,
+    rgba(140, 47, 57, 0) 100%
+  );
+  margin-bottom: 1.6rem;
+  margin-top: 1.5rem;
+  box-shadow: rgba(157, 156, 156, 0.5) 0.2rem 0.3rem 0.5rem 0.1rem;
+  padding: 1.3rem 1.6rem 1.6rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.commWorkDown {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+}
+.commWorkSpan2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.commWorkUp {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: rgb(0, 0, 0);
+}
+.commWorkSpan3 {
+  padding-top: 1rem;
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+/* footer  */
+.footer-first {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 0;
+  align-items: center;
+}
+.fh {
+  font-family: "Oswald";
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  line-height: 4.5rem;
+}
+.footer {
+  background-color: #8c2f39;
+  overflow-y: hidden;
+}
+.rem {
+  color: white;
+  opacity: 60%;
+  font-family: "Oswald";
+  font-size: 4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.name:hover .rem {
+  color: white;
+  opacity: 100%;
+}
+.lap {
+  padding-left: 1.5rem;
+}
+.f-link {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+.f-links a:hover {
+  color: #8c2f39;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0.1rem 0 #fff, -0.1rem 0 #fff, 0 0.1rem #fff, 0 -0.1rem #fff,
+    0.1rem 0.1rem #fff, -0.1rem -0.1rem #fff, 0.1rem -0.1rem #fff,
+    -0.1rem 0.1rem #fff;
+}
+#nl-header {
+  font-family: "Oswald";
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4.7rem;
+  letter-spacing: 0rem;
+  color: white;
+}
+.news-letter {
+  width: fit-content;
+  text-align: right;
+}
+#nl-subtext {
+  color: #c5c5c5;
+  font-family: "Roboto";
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  letter-spacing: 0rem;
+  margin-bottom: 1rem;
+}
+input {
+  width: 40rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 0.7rem;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+input::placeholder {
+  padding-left: 1rem;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.btn {
+  display: inline-block;
+}
+.data {
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+
+  padding: 0.9rem 2.4rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 1.1rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.9rem;
+  color: #ffffff;
+  z-index: 1;
+  background-color: #8c2f39;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  -ms-transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  -webkit-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  -webkit-transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  -ms-transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  -webkit-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #8c2f39;
+  border: 0.1rem solid #ffffff;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  -ms-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  -ms-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+.footer-second {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.6rem 0rem;
+  align-items: center;
+}
+.socials a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 2.1rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.socials svg {
+  margin-bottom: 0.4rem;
+}
+
+/* responsive starts here */
+
+@media (max-width: 600px) {
+  html {
+    margin: auto;
+    height: auto;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 27%;
+  }
+  body {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .navRight {
+    display: none;
+  }
+
+  .commWorkHeading1 {
+    font-size: 4rem;
+  }
+  .commWorkHeading2 {
+    font-size: 4rem;
+  }
+
+  .commWorkDivDown {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-bottom: 10rem;
+  }
+  .commWorkDiv {
+    padding-left: 5.5rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  .commWorkDown {
+    padding-left: 0rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    display: block;
+  }
+  .commWorkSpan2 {
+    font-size: 3rem;
+  }
+  .commWorkSpan3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  .commWork {
+    line-height: 4.5rem;
+    font-size: 3.9rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    margin-bottom: 3.5rem;
+    box-shadow: rgba(157, 156, 156, 0.3) 0.5rem 0.6rem 0.8rem 0.4rem;
+  }
+  .commWorkUp {
+    line-height: 4.5rem;
+    font-size: 4rem;
+    font-weight: 585;
+  }
+  .hover-reveal img {
+    width: 0;
+    height: 0;
+    object-fit: cover;
+    position: relative;
+    transition: text-transform 0.5s ease-out;
+  }
+
+  .workNAV ul li .link span {
+    display: block;
+    z-index: 5;
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+  .link {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 4rem;
+    padding-top: 3rem;
+    border-bottom: 0.37rem solid black;
+    font-weight: 578;
+    padding-bottom: 3rem;
+  }
+  .link:hover {
+    color: #b23a48;
+    font-weight: 700;
+  }
+
+  .headingWork {
+    padding-bottom: 9rem;
+    padding-top: 9rem;
+    font-family: Anton;
+    font-style: normal;
+    padding-left: 4.5rem;
+  }
+
+  .workNavSpecial {
+    display: contents;
+    color: #8c2f39;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 5rem;
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-top: 5rem;
+    padding-bottom: 0;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .TWT {
+    display: none;
+  }
+  .hover-reveal {
+    display: none;
+  }
+}
+
+/* responsive for tablets */
+
+@media (min-width: 601px) and (max-width: 961px) {
+  html {
+    margin: auto;
+    height: auto;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 55%;
+  }
+  body {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .navRight {
+    display: none;
+  }
+
+  .headingWork {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .commWorkHeading1 {
+    font-size: 6rem;
+  }
+
+  .commWorkHeading2 {
+    font-size: 6rem;
+  }
+
+  .hover-reveal img {
+    width: 0;
+    height: 0;
+    object-fit: cover;
+    position: relative;
+    transition: text-transform 0.5s ease-out;
+  }
+
+  .workNAV ul li .link span {
+    display: block;
+    z-index: 5;
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+  .link {
+    padding-left: 5.5rem;
+    padding-right: 3rem;
+    font-size: 4rem;
+    padding-top: 3rem;
+    border-bottom: 0.3rem solid black;
+    font-weight: 578;
+    padding-bottom: 3rem;
+  }
+  .link:hover {
+    color: #b23a48;
+    font-weight: 700;
+  }
+  .commWorkDivDown {
+    padding-left: 5.5rem;
+    padding-bottom: 11rem;
+  }
+  .commWorkDiv {
+    padding-left: 5.5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .commWorkDown {
+    padding-left: 0rem;
+    padding-top: 1rem;
+    font-weight: 400;
+  }
+  .commWorkSpan2 {
+    font-size: 3rem;
+  }
+  .commWorkSpan3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 3rem;
+  }
+  .commWork {
+    line-height: 4.5rem;
+    font-size: 3.9rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 3.5rem;
+    box-shadow: rgba(157, 156, 156, 0.3) 0.5rem 0.6rem 0.8rem 0.4rem;
+  }
+  .commWorkUp {
+    line-height: 4.5rem;
+    font-size: 3.9rem;
+  }
+
+  .headingWork {
+    padding-bottom: 9rem;
+    padding-top: 9rem;
+    font-family: Anton;
+    font-style: normal;
+    font-size: 7rem;
+    text-align: start;
+    padding-left: 4.5rem;
+  }
+
+  .workNavSpecial {
+    display: contents;
+    color: #8c2f39;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 5rem;
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-top: 5rem;
+    padding-bottom: 0;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .TWT {
+    display: none;
+  }
+  .hover-reveal {
+    display: none;
+  }
+}
